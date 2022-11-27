@@ -2,7 +2,8 @@
 <h2>YOUR TEXT</h2>
 {{fulltext}}
 <h1>word count</h1>
-<a href={% url 'home'%}>Type New Text</a>
 {% for word,counttotal in sortedwords %}
 {{ word }}--{{counttotal}}
-{% endfor %}
+{% endfor %}<br>
+<br>
+<button type="button" name="button"><a href={% url 'home'%}>Type New Text</a></button>
